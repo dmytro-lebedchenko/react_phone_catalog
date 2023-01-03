@@ -1,46 +1,40 @@
-# Getting Started with Create React App
+# React Phone Catalog
+1. <b>Training project</b>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+2. <b>Project purpose:</b> <br>
+  Implement the Products catalog according to the markup and implement the functionality such as fetching data from the REST API, storing products in the cart and the favorites in the localStorage.
 
-## Available Scripts
+3. <b>Project task:</b> <br>
+  - Design and implement your own responsive tablet and mobile layout according to the available desktop markup;
+  - Fetch products from API:
+      - Create `getHotPriceProducts` method fetching products with discount from API sorted by absolute discount value (not percentage given in API);
+      - Create `getBrandNewProducts` method fetching products without a discount from the API starting from the most expensive;
+      - Create `getSuggestedProducts` method fetching the suggested products;
+  - Create `ProductsSlider` component and use it in `Hot prices`/`Brand new`/`You may also like` blocks;
+  - Save the `Cart`/`Favorites` to the `localSotrage` on each change and read it on page load;
+  - Create a `SearchBar` component with an input into the `<header>` to filter products.
+      - It should work with pagination and sorting;
+      - Add `debounce` to the search field;
+      - Save `Search` params in the URL using `queryParams` (`?query=moto`) and apply them on page load;
+  - Add ability to sort the products by `age` (`Newest`, `value="age"`), `name` (`Alphabetically`, `value="name"`) and `price` (`Cheapest`, `value="price"`) using `<select>` element. Also save sort order in the URL `?sort=age` and apply it after the page reload
+  - Add `Pagination` and `Items on page` using element with `4`, `8`, `16` and `all` options.
+      - It should limit the products you show to the user;
+      - Hide all the pagination elements if there are a few items (less than 1 smallest page size);
+      - Save `?page=2&perPage=8` in the URL and apply them after the page reload;
+  - Add `NotFoundPage` containing text `Page not found`;
 
-In the project directory, you can run:
+3. <b>Tech stack:</b> <br>
+  - ReactJS;
+  - React Router;
+  - JavaScript;
+  - TypeScript;
+  - HTML;
+  - CSS/SCSS;
+  - BEM;
+  - REST API;
+  - Fetch;
+  - localStorage.
 
-### `npm start`
+4. [PREVIEW LINK](https://dmytro-lebedchenko.github.io/react_phone_catalog/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. [LAYOUT LINK](https://www.figma.com/file/uEetgWenSRxk9jgiym6Yzp/Phone-catalog-redesign?node-id=1%3A2&t=1CPKVPCJEz7E7J0I-0)
