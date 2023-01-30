@@ -35,6 +35,6 @@
   - Fetch;
   - localStorage.
 
-4. [PREVIEW LINK](https://dmytro-lebedchenko.github.io/react_phone_catalog/)
+4. [PREVIEW LINK](https://dmytro-lebedchenko.github.io/react_phone_catalog/#/)
 
 5. [LAYOUT LINK](https://www.figma.com/file/uEetgWenSRxk9jgiym6Yzp/Phone-catalog-redesign?node-id=1%3A2&t=1CPKVPCJEz7E7J0I-0)
